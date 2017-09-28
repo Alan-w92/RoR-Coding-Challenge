@@ -1,4 +1,4 @@
-class Commute < ApplicationRecord
+class Blog < ApplicationRecord
   validates :Id, presence: true
   validates :title, presence: true
   validates :description, presence: true
