@@ -1,6 +1,18 @@
 // @import "*";
 
 table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+h1 {
+  text-align: center;
+}
+
+#form {
+  margin-bottom: 40px;
+}
+
+.button-group {
+  margin: 20px;
 }
