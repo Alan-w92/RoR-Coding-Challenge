@@ -1,6 +1,7 @@
 import React, { Component }  from 'react';
 import BlogTile from '../components/BlogTile'
 import FormContainer from './FormContainer'
+
 class BlogIndex extends Component {
   constructor(props) {
     super(props);
