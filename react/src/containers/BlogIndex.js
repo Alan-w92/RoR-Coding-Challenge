@@ -30,28 +30,18 @@ class BlogIndex extends Component {
     }
 
   addNewBlog(formPayload) {
-    fetch(`/api/v1/blogs`, {
+    fetch(`http://localhost:3000/api/v1/blogs.json`, {
       method: 'POST',
       headers : {
+       'Accept': 'application/json',
        'Content-Type': 'application/json',
-       'Accept': 'application/json'
      },
       body: JSON.stringify(formPayload)
-    })
-    .then(response => {
-      if (response.ok) {
-        return response;
-      } else {
-        let errorMessage = `${response.status} (${response.statusText})`,
-            error = new Error(errorMessage);
-        throw(error);
-      }
     })
     .then(response => response.json())
     .then(responseData => {
       this.setState({ blogs: [...this.state.blogs, responseData] })
     })
-    .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
   render() {
