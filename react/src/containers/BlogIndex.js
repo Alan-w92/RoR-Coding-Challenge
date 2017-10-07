@@ -30,7 +30,7 @@ class BlogIndex extends Component {
     }
 
   addNewBlog(formPayload) {
-    fetch(`http://localhost:3000/api/v1/blogs.json`, {
+    fetch(`http://localhost:3000/api/v1/blogs`, {
       method: 'POST',
       headers : {
        'Accept': 'application/json',
