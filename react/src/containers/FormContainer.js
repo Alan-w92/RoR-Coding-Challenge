@@ -54,43 +54,59 @@ class FormContainer extends Component {
   render() {
     return(
       <form onSubmit={this.handleFormSubmit}>
-        <TextInputField
-          content={this.state.id}
-          label="Id"
-          name="id"
-          handleChange={this.handleChange}
-        />
-        <TextInputField
-          content={this.state.title}
-          label="Title"
-          name="title"
-          handleChange={this.handleChange}
-        />
-        <TextInputField
-          content={this.state.description}
-          label="Description"
-          name="description"
-          handleChange={this.handleChange}
-        />
-        <TextInputField
-          content={this.state.author}
-          label="Author"
-          name="author"
-          handleChange={this.handleChange}
-        />
-        <TextInputField
-          content={this.state.created_at}
-          label="Created_at"
-          name="created_at"
-          handleChange={this.handleChange}
-        />
-        <TextInputField
-          content={this.state.updated_at}
-          label="Updated_at"
-          name="updated_at"
-          handleChange={this.handleChange}
-        />
+        <div>
+          <TextInputField
+            content={this.state.id}
+            label="Id:"
+            name="id"
+            handleChange={this.handleChange}
+          />
+        </div>
 
+        <div>
+          <TextInputField
+            content={this.state.title}
+            label="Title:"
+            name="title"
+            handleChange={this.handleChange}
+          />
+        </div>
+
+        <div>
+          <TextInputField
+            content={this.state.description}
+            label="Description:"
+            name="description"
+            handleChange={this.handleChange}
+          />
+        </div>
+
+        <div>
+          <TextInputField
+            content={this.state.author}
+            label="Author:"
+            name="author"
+            handleChange={this.handleChange}
+          />
+        </div>
+
+        <div>
+          <TextInputField
+            content={this.state.created_at}
+            label="Created_at:"
+            name="created_at"
+            handleChange={this.handleChange}
+          />
+        </div>
+
+        <div>
+          <TextInputField
+            content={this.state.updated_at}
+            label="Updated_at:"
+            name="updated_at"
+            handleChange={this.handleChange}
+          />
+        </div>
         <div className="button-group">
           <button className="button" onClick={this.handleClearForm}>Clear</button>
           <input className="button" type="submit" value="Submit" />
