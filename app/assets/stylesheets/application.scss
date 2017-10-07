@@ -5,14 +5,31 @@ table, th, td {
   border-collapse: collapse;
 }
 
-h1 {
+h1, h3 {
   text-align: center;
+  color: #001f3f;
 }
 
 #form {
   margin-bottom: 40px;
+  margin: 0% 20%;
+  border: 1px solid black;
 }
 
 .button-group {
   margin: 20px;
+}
+
+#blogs {
+  margin: 0% 20%;
+  background-color: #F0FFFF;
+  margin-top: 40px;
+}
+
+body {
+  background-image: url(http://www.beulahland.us/picts/background-news.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #001f3f;
 }

@@ -60,26 +60,29 @@ class BlogIndex extends Component {
       <div>
         <h1>News Blogs 101</h1>
         <div id='form'>
+          <h3>New Blog Form</h3>
           <FormContainer
             addNewBlog={addNewBlog}
           />
         </div>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>title</th>
-              <th>description</th>
-              <th>author</th>
-              <th>created_at</th>
-              <th>updated_at</th>
-            </tr>
-          </thead>
-          <tbody>
-            {blogs}
-          </tbody>
-        </table>
+        <div id='blogs'>
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>title</th>
+                <th>description</th>
+                <th>author</th>
+                <th>created_at</th>
+                <th>updated_at</th>
+              </tr>
+            </thead>
+            <tbody>
+              {blogs}
+            </tbody>
+          </table>
+        </div>
       </div>
     )
   }
