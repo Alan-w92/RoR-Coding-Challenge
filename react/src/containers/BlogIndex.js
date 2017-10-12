@@ -57,6 +57,7 @@ class BlogIndex extends Component {
     })
 
     return(
+
       <div>
         <h1>News Blogs 101</h1>
         <div id='form'>
@@ -67,7 +68,7 @@ class BlogIndex extends Component {
         </div>
 
         <div id='blogs'>
-          <table>
+          <table id="data">
             <thead>
               <tr>
                 <th>Id</th>
